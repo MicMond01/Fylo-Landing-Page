@@ -1,0 +1,370 @@
+ /* Root Predifined Styles */
+
+ @import url(https://fonts.google.com/specimen/Raleway);
+ @import url(https://fonts.google.com/specimen/Open+Sans);
+
+ :root {
+    --VeryDarkBlue: hsl(243, 87%, 12%);
+    --DesaturatedBlue: hsl(238, 22%, 44%);
+    --BrightBlue: hsl(224, 93%, 58%);
+    --BrighLighttBlue: hsl(224, 93%, 65%);
+    --ModerateCyan: hsl(170, 45%, 43%);
+    --LightGrayishBlue: hsl(240, 75%, 98%);
+    --LightGray: hsl(0, 0%, 75%);
+ }
+
+ /* Global Reset */
+
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ p, h2 {
+     padding: 2rem;
+ }
+
+ header, h2, h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: var(--VeryDarkBlue);
+ }
+
+ p, nav {
+     font-family: 'Open Sans', sans-serif;
+     font-weight: 400;
+ }
+
+ a {
+     text-decoration: none;
+     color: var(--DesaturatedBlue);
+ }
+
+ nav {
+     padding: 1rem;
+ }
+
+ nav a {
+     float: right;
+     padding: 0 2%;
+ }
+
+ nav img {
+     width: 10%;
+ }
+
+.illustration {
+    padding: 3rem 0;
+    width: 100%;
+}
+
+
+.first-section{
+    text-align: center;
+}
+.first-section h1,
+p {
+    line-height: 2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: var(--VeryDarkBlue);
+}
+
+.first-section h1 {
+    padding-bottom: 2rem;
+    line-height: 3rem;
+}
+
+.input,
+button {
+    text-align: start;
+    width: 90%;  
+    height: 3rem;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+}
+
+.input {
+    border-color: var(--VeryDarkBlue);
+    margin-bottom: 1rem;
+}
+
+button {
+    text-align: center;
+    background-color: var(--BrightBlue);
+    color: var(--LightGrayishBlue);
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    box-shadow: 1px 5px 5px var(--LightGray);
+}
+
+button:hover {
+    background-color: var(--BrighLighttBlue);
+}
+
+.curve{
+    content: url(images/bg-curve-mobile.svg);
+    width: 100%;
+    padding-top: 4rem;
+}
+
+.second-section{
+    background-color: var(--LightGrayishBlue);
+    padding-bottom: 2rem;
+}
+
+.second-section h1 {
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 0;
+}
+
+.second-section p {
+    text-align: start;
+    padding-bottom: 0;
+}
+
+.link {
+    color: var(--ModerateCyan);
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    /* border-bottom: 0.1rem solid var(--ModerateCyan); */
+    
+}
+
+.link img {
+    width: 2.5rem;
+    padding-left: .5rem;
+}
+
+.founder-comment {
+    background-color: white;
+    width: 80%;
+    margin: 5rem 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    box-shadow: 1px 5px 10px var(--LightGray);
+}
+
+.founder {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    font-size: 0.8rem;
+    color: var(--VeryDarkBlue);
+}
+
+.founder img {
+    display:inline-block;
+    border-radius: 50%;
+    align-self: center;
+    justify-self: center;
+    width: 3rem;
+    height: 3rem;
+}
+
+.founder p {
+    line-height: 1.5rem;
+    padding: 0 0  0 2rem;
+}
+
+.founder span {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.sign-up {
+    background-color: var(--DesaturatedBlue);
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.sign-up h2 {
+    padding-bottom: 0;
+    text-align: center;
+    color: var(--LightGrayishBlue);
+}
+
+.sign-up p {
+    color: var(--LightGrayishBlue);
+}
+
+.sign-up button {
+    box-shadow: none;
+    width: 80%;
+}
+
+.sign-up .input {
+    width: 80%;
+    border-color: white;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+footer {
+    background-color: var(--VeryDarkBlue);
+    line-height: 0.1rem;
+    padding: 2rem;
+}
+
+.footer-logo {
+    padding: 3rem 0;
+    filter: brightness(0) invert(1);
+    height: 150px;
+}
+
+footer p {
+    text-align: start;
+    padding: 0.4rem;
+    color: var(--LightGrayishBlue);
+}
+
+.phone {
+    padding-bottom: 3rem;
+}
+
+.phone img {
+    padding-right: 1.5rem;
+}
+
+.contact {
+    padding: 3rem 0;
+}
+
+/* Desktop Version */
+
+@media (min-width: 1000px){
+    .first-section {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .first-section .illustration {
+        grid-column: 2;
+        grid-row: 1 / 4;
+    }
+    .first-part h1,
+    p  {
+        text-align: start;
+    }
+
+    .first-part h1 {
+        padding: 3rem 3rem 0 2rem;
+    }
+
+    .first-section .input {
+        width: 50%;
+    } 
+
+    .first-section button {
+        width: 30%;
+    }
+
+    .first-section form {
+        text-align: center;
+        display: flex;
+        padding-left: 5%;
+        gap: 0.5rem;
+    }
+
+    .curve{
+        content: url(images/bg-curve-desktop.svg);
+        width: 100%;
+        padding-top: 4rem;
+        top: 0;
+        grid-column: 1/4;
+    }
+
+    .second-section {
+        display: grid;
+        width: 100%;
+        grid-column: 1/4;
+    }
+
+    .second-section .illustration {
+        align-self: center;
+    }
+
+    .second-section h1 {
+        text-align: start;
+        font-size: 2.5rem;
+        padding-left: 2rem;
+        font-weight: 700;
+        padding-bottom: 2rem;
+    }
+
+    .second-section .head p {
+        padding-top: 0;
+        max-width: 80%;
+        text-align: start;
+    }
+
+    .link {
+        text-align: start;
+        justify-content: start;
+        
+    }
+
+    .founder-comment {
+        width: 50%;
+        margin: 5rem 0;
+        margin-left: 2rem;
+        padding: 0;
+    }
+
+    .sign-up {
+        display: grid;
+        grid-column: 1/4;
+
+    }
+
+    .get-head {
+        grid-column: 1 / span 2;
+        max-width: 90%;
+    }
+
+    .sign-up form {
+        grid-column: 3 /span 4;
+        width: 35rem;
+        display: block;
+    }
+
+    .sign-up button {
+        width: 15rem;
+        display: block;
+    }
+
+    .sign-up .input {
+        display: block;
+        width: 30rem;
+    }
+
+
+    .get-head h2 {
+        text-align: start;
+    }
+}
+
+footer {
+    display: flex;
+    gap: 8rem;
+}
+
+.footer-logo {
+    padding-bottom: 1rem;
+    width: 10rem;
+    height: 7rem;
+}
+
+.about {
+    padding-top: 7rem;
+}
+
+.contact {
+    padding-top: 7rem;
+}
