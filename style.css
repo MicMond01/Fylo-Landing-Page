@@ -51,10 +51,12 @@
 
  nav {
      padding: 1rem;
+     color: var(--VeryDarkBlue);
  }
 
  nav a {
      float: right;
+     color: var(--VeryDarkBlue);
      padding: 0 2%;
  }
 
