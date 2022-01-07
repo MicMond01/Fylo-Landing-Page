@@ -31,7 +31,7 @@
     color: var(--VeryDarkBlue);
  }
 
- p, nav {
+ p, nav, ul {
      font-family: 'Open Sans', sans-serif;
      font-weight: 400;
  }
@@ -39,6 +39,14 @@
  a {
      text-decoration: none;
      color: var(--DesaturatedBlue);
+ }
+
+ ul {
+     list-style-type: none;
+ }
+
+ ul a {
+    color: var(--LightGrayishBlue);
  }
 
  nav {
@@ -210,6 +218,12 @@ footer {
     background-color: var(--VeryDarkBlue);
     line-height: 0.1rem;
     padding: 2rem;
+    display: block;
+    text-align: start;
+}
+
+footer {
+    display: block;
 }
 
 .footer-logo {
@@ -218,7 +232,8 @@ footer {
     height: 150px;
 }
 
-footer p {
+footer p, ul, a {
+    display: block;
     text-align: start;
     padding: 0.4rem;
     color: var(--LightGrayishBlue);
@@ -232,8 +247,14 @@ footer p {
     padding-right: 1.5rem;
 }
 
-.contact {
-    padding: 3rem 0;
+ul.about {
+    padding: 0;
+    line-height: 2rem;
+}
+
+ul.contact {
+    padding-top: 2rem;
+    line-height: 2rem;
 }
 
 /* Desktop Version */
@@ -290,7 +311,7 @@ footer p {
         align-self: center;
     }
 
-    .second-section h1 {
+    .second-section h2 {
         text-align: start;
         font-size: 2.5rem;
         padding-left: 2rem;
@@ -348,23 +369,26 @@ footer p {
     .get-head h2 {
         text-align: start;
     }
+    .foot {
+        display: flex;
+        gap: 8rem;
+    }
+    
+    .footer-logo {
+        padding-bottom: 1rem;
+        width: 10rem;
+        height: 7rem;
+    }
+    
+    ul.about {
+        padding-top: 7rem;
+        line-height: 2rem;
+    
+    }
+    
+    ul.contact {
+        padding-top: 7rem;
+        line-height: 2rem;
+    }
 }
 
-footer {
-    display: flex;
-    gap: 8rem;
-}
-
-.footer-logo {
-    padding-bottom: 1rem;
-    width: 10rem;
-    height: 7rem;
-}
-
-.about {
-    padding-top: 7rem;
-}
-
-.contact {
-    padding-top: 7rem;
-}
